@@ -8,15 +8,9 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        if (!name.isEmpty() && name.length() >= 3 && name.length() <= 19) {
-            if(name.split(" ").length == 2)
-            {
-                if(!name.startsWith(" ") && !name.endsWith(" "))
-                {
-                    System.out.println("Correct name");
-                    return true;
-                }
-            }
+        if (!name.isEmpty() && name.length() >= 3 && name.length() <= 19 && name.split(" ").length == 2 && !name.startsWith(" ") && !name.endsWith(" ")) {
+            System.out.println("Correct name");
+            return true;
         }
         System.out.println("Incorrect name");
         return false;
