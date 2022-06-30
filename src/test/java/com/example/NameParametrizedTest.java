@@ -21,6 +21,7 @@ public class NameParametrizedTest {
         return new Object[][] {
                 { "", false},
                 { "12",  false},
+                { "123",  false},
                 { "ТимотейШевролеТимотейШевролеТимотейШевроле",  false},
                 { "    ",  false},
                 { " Тимотей Шевроле",  false},
